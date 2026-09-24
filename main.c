@@ -65,10 +65,11 @@ int main(int argc, char *argv[])
 	//section of print out all the different methods and output method
 	output_array(arr);
 
+	Array *avg = average_adjacent(arr);
+
 	shift_array(arr);
 	output_array(arr);
 
-	Array *avg = average_adjacent(arr);
 	output_array(avg);
 
 	free(arr->data);
